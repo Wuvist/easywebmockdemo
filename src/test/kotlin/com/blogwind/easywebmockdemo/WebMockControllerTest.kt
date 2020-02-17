@@ -19,7 +19,7 @@ class WebMockControllerTest {
     @Test
     fun testController() {
         val user = User("test user", "test@abc.com", 18)
-        MockServerManager.setDefaultJsonResponse("/user.json?id=userId", user)
+        MockServerManager.setDefaultResponseJson("/user.json", user)
 
         val html = controller.user("userId").block()!!
 
