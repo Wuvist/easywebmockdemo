@@ -1,10 +1,10 @@
 package com.blogwind.easywebmockdemo
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 
-@EnableAutoConfiguration
+@EnableConfigurationProperties(DemoProperties::class)
 @SpringBootApplication
 class DemoApplication
 
