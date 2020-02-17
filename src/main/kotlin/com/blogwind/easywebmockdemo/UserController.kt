@@ -18,7 +18,7 @@ class UserController(val userService: UserService) {
         val user = userService.getUser(userId)
 
         return user.map {
-            "<html><body><h1>${it!!.name}: ${it!!.age}</body>"
+            "<html><body><h1>${it!!.name}: ${it.age}</body>"
         }
     }
 }
