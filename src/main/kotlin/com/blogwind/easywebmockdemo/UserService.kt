@@ -26,5 +26,4 @@ class UserService(properties: DemoProperties) {
                     it
                 }
     }
-
 }
