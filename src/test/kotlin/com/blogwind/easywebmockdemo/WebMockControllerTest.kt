@@ -3,13 +3,10 @@ package com.blogwind.easywebmockdemo
 import com.blogwind.easywebmock.MockServerManager
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.platform.runner.JUnitPlatform
-import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ContextConfiguration
 
-@RunWith(JUnitPlatform::class)
 @SpringBootTest
 @ContextConfiguration(initializers = [ConfigInitializer::class], classes = [DemoApplication::class])
 class WebMockControllerTest {
